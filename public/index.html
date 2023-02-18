@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inder&display=swap"
+    rel="stylesheet"
+  />
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -25,8 +31,33 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <svg
+      id="wave"
+      style="transform: rotate(180deg); transition: 0.3s"
+      viewBox="0 0 1440 220"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(21, 0, 80, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(21, 0, 80, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style="transform: translate(0, 0px); opacity: 1"
+        fill="url(#sw-gradient-0)"
+        d="M0,132L20,121C40,110,80,88,120,95.3C160,103,200,139,240,139.3C280,139,320,103,360,88C400,73,440,81,480,102.7C520,125,560,161,600,176C640,191,680,183,720,165C760,147,800,117,840,117.3C880,117,920,147,960,150.3C1000,154,1040,132,1080,135.7C1120,139,1160,169,1200,183.3C1240,198,1280,198,1320,165C1360,132,1400,66,1440,44C1480,22,1520,44,1560,51.3C1600,59,1640,51,1680,47.7C1720,44,1760,44,1800,40.3C1840,37,1880,29,1920,40.3C1960,51,2000,81,2040,99C2080,117,2120,125,2160,135.7C2200,147,2240,161,2280,157.7C2320,154,2360,132,2400,113.7C2440,95,2480,81,2520,66C2560,51,2600,37,2640,58.7C2680,81,2720,139,2760,146.7C2800,154,2840,110,2860,88L2880,66L2880,220L2860,220C2840,220,2800,220,2760,220C2720,220,2680,220,2640,220C2600,220,2560,220,2520,220C2480,220,2440,220,2400,220C2360,220,2320,220,2280,220C2240,220,2200,220,2160,220C2120,220,2080,220,2040,220C2000,220,1960,220,1920,220C1880,220,1840,220,1800,220C1760,220,1720,220,1680,220C1640,220,1600,220,1560,220C1520,220,1480,220,1440,220C1400,220,1360,220,1320,220C1280,220,1240,220,1200,220C1160,220,1120,220,1080,220C1040,220,1000,220,960,220C920,220,880,220,840,220C800,220,760,220,720,220C680,220,640,220,600,220C560,220,520,220,480,220C440,220,400,220,360,220C320,220,280,220,240,220C200,220,160,220,120,220C80,220,40,220,20,220L0,220Z"
+      ></path>
+    </svg>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +70,48 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin
+    ></script>
+
+    <script>
+      var Alert = ReactBootstrap.Alert;
+    </script>
+    <script src="voucher_codes.js"></script>
+    <svg
+      id="wave"
+      style="transform: rotate(0deg); transition: 0.3s"
+      viewBox="0 0 1440 490"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(21, 0, 80, 1)" offset="0%"></stop>
+          <stop stop-color="rgba(21, 0, 80, 1)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style="transform: translate(0, 0px); opacity: 1"
+        fill="url(#sw-gradient-0)"
+        d="M0,392L40,326.7C80,261,160,131,240,122.5C320,114,400,229,480,236.8C560,245,640,147,720,130.7C800,114,880,180,960,171.5C1040,163,1120,82,1200,98C1280,114,1360,229,1440,277.7C1520,327,1600,310,1680,318.5C1760,327,1840,359,1920,359.3C2000,359,2080,327,2160,334.8C2240,343,2320,392,2400,408.3C2480,425,2560,408,2640,383.8C2720,359,2800,327,2880,294C2960,261,3040,229,3120,228.7C3200,229,3280,261,3360,294C3440,327,3520,359,3600,383.8C3680,408,3760,425,3840,392C3920,359,4000,278,4080,204.2C4160,131,4240,65,4320,65.3C4400,65,4480,131,4560,163.3C4640,196,4720,196,4800,171.5C4880,147,4960,98,5040,73.5C5120,49,5200,49,5280,49C5360,49,5440,49,5520,114.3C5600,180,5680,310,5720,375.7L5760,441L5760,490L5720,490C5680,490,5600,490,5520,490C5440,490,5360,490,5280,490C5200,490,5120,490,5040,490C4960,490,4880,490,4800,490C4720,490,4640,490,4560,490C4480,490,4400,490,4320,490C4240,490,4160,490,4080,490C4000,490,3920,490,3840,490C3760,490,3680,490,3600,490C3520,490,3440,490,3360,490C3280,490,3200,490,3120,490C3040,490,2960,490,2880,490C2800,490,2720,490,2640,490C2560,490,2480,490,2400,490C2320,490,2240,490,2160,490C2080,490,2000,490,1920,490C1840,490,1760,490,1680,490C1600,490,1520,490,1440,490C1360,490,1280,490,1200,490C1120,490,1040,490,960,490C880,490,800,490,720,490C640,490,560,490,480,490C400,490,320,490,240,490C160,490,80,490,40,490L0,490Z"
+      ></path>
+    </svg>
   </body>
 </html>
